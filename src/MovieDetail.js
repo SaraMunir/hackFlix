@@ -32,6 +32,10 @@ function MovieDetail() {
                 <div className="movieContent">
                     <div className="MovieTxt">
                         <h1>{movie.original_title}</h1>
+                        <div className="genre">
+                            {movie.genres ? movie.genres.map(genre =>
+                                `${genre.name} | `) : null}
+                        </div>
                         <h4>{movie.tagline}</h4>
                         <div className="detail">
                             <p>Overview: {movie.overview}</p>
