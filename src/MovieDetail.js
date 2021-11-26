@@ -22,7 +22,7 @@ function MovieDetail() {
             // Store the API results to the "movies" state value...
             setMovie(movieResults);
         })
-    }, []);
+    }, [movieId]);
     return (
         <div>
             <div className="movieHero">
